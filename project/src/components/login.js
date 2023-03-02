@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import MoviesList from "./moviesList";
+import Pages from "./pages";
 
 
 const Login = () => {
@@ -33,7 +33,7 @@ const Login = () => {
                 <input type="password" value={password} onChange={(e) => setPassword(e.target.value)} class="form-control" id="exampleInputPassword1" />
             </div>
            
-            <Link to="/moviesList"><button type="submit" onSubmit={handleLogin} class="btn btn-success">Submit</button></Link>  
+            <Link to="/pages"><button type="submit" onSubmit={handleLogin} class="btn btn-success">Submit</button></Link>  
         </form>
     )
 }

@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-function MoviesList () {
+function Pages () {
 
 return (
     <div><Link to="/homepage"><button class="btn btn-success">Logout</button></Link>
@@ -13,4 +13,4 @@ return (
 )
 }
 
-export default MoviesList
+export default Pages

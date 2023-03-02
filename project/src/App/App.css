@@ -1,14 +1,14 @@
 body {
-    background-image: url(/src/images/felix-mooneeram-evlkOfkQ5rE-unsplash.jpg);
-    color: aliceblue;
+    background-image: url(/src/images/showtime.jpg);
+    color: rgb(245, 240, 255);
   }
   
   .movies {
-    background-image: url(/src/images/pexels-pixabay-33129\ \(1\).jpg);
-    color: aliceblue;
+    background-image: url(/src/images/shutterstock.jpg);
+    color: rgb(244, 240, 255);
     text-align: center;
     width: fit-content;
-    min-height: 80vh;
+    min-height: 50vh;
     display: flex;
     flex-direction: row;
   }
@@ -34,7 +34,7 @@ body {
   }
   
   .App-header {
-    background-color: #282c34;
+    background-color: rgb(125, 186, 204);
     min-height: 100vh;
     display: flex;
     flex-direction: column;
@@ -45,7 +45,7 @@ body {
   }
   
   .App-link {
-    color: #61dafb;
+    color: #6178fb;
   }
   
   @keyframes App-logo-spin {
