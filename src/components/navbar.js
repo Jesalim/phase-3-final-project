@@ -13,7 +13,7 @@ function Navbar() {
       <nav class="navbar bg-dark">
         <div class="container-fluid">
           <Link to="/">
-            <button class="btn btn-outline-success"> <h1 className="title">CULTURE THEATRE</h1></button></Link>
+            <button class="btn btn-outline-success"> <h1 className="title">CINEMATICA</h1></button></Link>
           <form class="d-flex" role="search">
             <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
             <button class="btn btn-outline-success" type="submit">Search</button>
