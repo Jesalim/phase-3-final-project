@@ -8,7 +8,7 @@ body {
   
 
   .movies {
-    background-image: url(/src/images/shutterstock.jpg);
+    background-image: url(/src/images/shutterstock.jpg); 
     display: flex;
   justify-content: space-between;
   align-items: center;
