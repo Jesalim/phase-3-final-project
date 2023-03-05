@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import Pages from "./pages";
+// import Pages from "./pages";
 
 
 const Login = () => {
@@ -21,19 +21,19 @@ const Login = () => {
 
 
     return (
-        <form class="container" >
+        <form className="container" >
             <h2>Login Here</h2>
-            <div class="mb-3 col-lg-6">
-                <label for="exampleInputEmail1" class="form-label">Email address</label>
-                <input type="email" value={email} onChange={(e) => setEmail(e.target.value)} class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" />
+            <div className="mb-3 col-lg-6">
+                <label for="exampleInputEmail1" className="form-label">Email address</label>
+                <input type="email" value={email} onChange={(e) => setEmail(e.target.value)} className="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" />
                
             </div>
-            <div class="mb-3 col-lg-6">
+            <div className="mb-3 col-lg-6">
                 <label for="exampleInputPassword1" class="form-label">Password</label>
-                <input type="password" value={password} onChange={(e) => setPassword(e.target.value)} class="form-control" id="exampleInputPassword1" />
+                <input type="password" value={password} onChange={(e) => setPassword(e.target.value)} className="form-control" id="exampleInputPassword1" />
             </div>
            
-            <Link to="/pages"><button type="submit" onSubmit={handleLogin} class="btn btn-success">Submit</button></Link>  
+            <Link to="/pages"><button type="submit" onSubmit={handleLogin} className="btn btn-success">Submit</button></Link>  
         </form>
     )
 }

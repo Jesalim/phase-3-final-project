@@ -4,14 +4,17 @@ import Login from "./login";
 import Pages from "./pages";
 import MovieCard from "./moviecard";
 import {Routes, Route } from "react-router-dom";
-
+import Navbar from "./navbar";
 
 function Homepage() {
 
+ 
+       
 
     return (
         <div >
-            <div class="container-lg">
+            <Navbar/>
+            <div className="container-lg">
                 <p className="fs-4">ITS SHOW TIME!!...</p>
                 
             </div>
@@ -19,7 +22,7 @@ function Homepage() {
          <Routes>
                 <Route path="/login" element= {<Login/>}></Route> 
                 <Route path="/register" element= {<Register/>}></Route> 
-                <Route path="/pages" element= {<Pages/>}></Route> 
+                <Route path="/" element= {<Pages/>}></Route> 
                 <Route path="/moviecard" element= {<MovieCard/>}></Route> 
             </Routes>
         </div>
