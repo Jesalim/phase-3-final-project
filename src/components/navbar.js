@@ -7,13 +7,12 @@ import Homepage from "./homepage";
 function Navbar() {
 
 
-
   return (
     <div>
       <nav className="navbar bg-dark">
         <div className="container-fluid">
           <Link to="/">
-            <button className="btn btn-outline-success"> <h1 className="title">CINEMATICA</h1></button></Link>
+            Home</Link>
           <form className="d-flex" role="search">
             <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
             <button className="btn btn-outline-success" type="submit">Search</button>
@@ -29,3 +28,5 @@ function Navbar() {
 }
 
 export default Navbar;
+
+

@@ -10,7 +10,7 @@ function Pages () {
 
  useState(()=>{
 
-    fetch("http://127.0.0.1:9292/")
+    fetch("http://127.0.0.1:9292/movies")
     .then(response => response.json())
     .then((data)=>{
         console.log(data);
