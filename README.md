@@ -17,6 +17,9 @@ React, Sinatra, SQLite3
 ## Deployment link for the react app
 https://phase-3-final-project.vercel.app/
 
+## Deployment link for the Sinatra backend code
+https://data-j87g.onrender.com/movies
+
 ## Deployment link for the Sinatra app
 
 ## Getting Started
