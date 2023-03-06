@@ -1,24 +1,20 @@
 .top {
-  background-color: rgb(0, 255, 76);
+  background-color: rgb(18, 19, 18);
   top: 40%
 }
 
 link {
-  color: red;
+  color: rgb(255, 0, 106);
 }
 
 .bottom {
-  color: white;
+  color: rgb(247, 241, 241);
+  font-size: medium;
+  text-align: center;
   bottom: 80%;
 }
 
-.bottom  {
-  color: black;
-}
-
 .overlay {
-  overflow-x: hidden;
-  overflow-y: auto;
   position: fixed;
   bottom: 0;
   right: 0;
@@ -26,10 +22,13 @@ link {
   top: 0;
   font-size: xx-large;
   color: white;
+  background: url(../Movies/showtime.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
+  overflow-x: hidden;
+  overflow-y: auto;
 }
 
 a:link {
@@ -45,7 +44,7 @@ a:visited {
 
 /* mouse over link */
 a:hover {
-  color: hotpink;
+  color: rgb(108, 105, 255);
 }
 
 /* selected link */
@@ -90,33 +89,64 @@ label {
   color: black;
 }
 
+.dash {
+  max-width: 1300px;
+  width: 100%;
+  margin: auto;
+  padding: 0;
+}
+
 .cards {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-auto-rows: auto;
-  grid-gap: 1rem;
-  grid-column-gap: 0px;
-  font-size: small;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 
 .card {
-  height: 200px;
-  width: 200px;
-  block-size: fit-content;
-  background-color: aquamarine;
-  color: brown;
-  text-size-adjust: small;
+  flex: 0 0 calc(33.33% -  20px);
+  max-width: calc(33.33%  - 20px);
+  width: 100%;
+  background: #04AA6D;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 20px;
+  transition: .3s;
+  border: 2px solid transparent;
+}
+
+.card:hover {
+  border-color: #1d39c4;
+}
+
+.cdbtn {
+  border: none;
+  outline: none;
+  background: #0483aa;
+  color: aliceblue;
+  border-radius: 10px;
+  max-width: 120px;
+  width: 100%;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  cursor: pointer;
+  transition: .3s;
+  border: 1px solid #aa0481;
+  font-size: 30px;
+}
+
+.cdbtn:hover {
+  background: transparent;
+
 }
 
 .card-image {
   width: 100px;
 }
 
-/* .card-wrapper {
-  display: flex;
-  flex-wrap: wrap;
-} */
 
 .dashnav {
   background-color: black;
@@ -147,4 +177,30 @@ label {
   background-color: rgb(109, 90, 90); /* Fallback color */
   background-color: rgb(255, 255, 255); /* Black w/ opacity */
   text-align: center;
+}
+
+.addmov {
+  border: 3px solid #f1f1f1;
+  width: 500px;
+  height: 500px;
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 350px;
+  top: 80px;
+  background-color: rgb(109, 90, 90); /* Fallback color */
+  background-color: rgb(255, 255, 255); /* Black w/ opacity */
+  text-align: center;
+}
+
+.search {
+  float: right;
+}
+
+.schbtn {
+  outline: none;
+  background: #aa7004;
+  color: aliceblue;
+  cursor: pointer;
+  transition: .3s;
+  border: 1px solid #aa0481;
 }
