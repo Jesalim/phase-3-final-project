@@ -15,13 +15,13 @@ function Dashboard() {
   }
 
     useEffect(() => {
-    fetch("http://127.0.0.1:9292/movies")
+    fetch("https://data-j87g.onrender.com/movies")
     .then((response) => response.json())
     .then((data) => setMovies(data))
     }, [])
 
     function handleSearch(query) {
-    fetch (`http://127.0.0.1:9292/search?query=${query}`) 
+    fetch (`https://data-j87g.onrender.com/search?query=${query}`) 
     .then((response) => response.json())
     .then((results) => {
       setMovies(results)
