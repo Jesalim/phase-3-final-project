@@ -5,7 +5,6 @@ function Registerpage() {
 
     const navigate = useNavigate()
     const [first, SetFirst] = useState("")
-    const [last, SetLast] = useState("")
     const [mail, SetMail] = useState("")
     const [pass, SetPass] = useState("")
 
@@ -15,8 +14,8 @@ function Registerpage() {
     fetch('http://127.0.0.1:9292/auth/register', {
     method: 'POST',
     body: JSON.stringify({
-        first_name: first,
-        last_name: last,
+        name: first,
+      
         email: mail,
         password: pass
     })
@@ -33,11 +32,9 @@ function Registerpage() {
     return(
         <form className="regnav" onSubmit={e => handleAdd(e)}>
         <input type="hidden" name="movie[user_id]" value="<%= @user.id %>"></input>
-        <label>first_name:</label>
+        <label>name:</label>
         <input type="text" value={first} onChange={e => SetFirst(e.target.value)}></input>
-        <label>last_name:</label>
-        <input type="text" value={last} onChange={e => SetLast(e.target.value)}></input>
-        <label>Email:</label>
+        <label>email:</label>
         <input type="text" value={mail} onChange={e => SetMail(e.target.value)}></input>
         <label>Password:</label>
         <input type="number" placeholder="Only numerical values are allowed" value={pass} onChange={e => SetPass(e.target.value)}></input>

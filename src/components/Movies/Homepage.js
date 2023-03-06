@@ -12,9 +12,7 @@ function Homepage() {
                 <Link to="/login">Login</Link>
                 <Link to="/mymovies">My Movies</Link>
             </nav>
-            <h1 className="bottom">Welcome to MovieInterest.This is the best movie site to search movies and add any movie that you like.I hope 
-                you enjoy your experience!
-            </h1>
+            <h1 className="bottom">Welcome to FilmHub! Here, you'll discover an array of incredible movies to explore and add to your watchlist. We strive to provide the ultimate movie experience and hope you'll thoroughly enjoy every moment of it. Get ready to embark on an exciting journey of cinematic discovery!</h1>
         </div>
     )
 }

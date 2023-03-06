@@ -17,6 +17,8 @@ link {
 }
 
 .overlay {
+  overflow-x: hidden;
+  overflow-y: auto;
   position: fixed;
   bottom: 0;
   right: 0;
@@ -24,7 +26,6 @@ link {
   top: 0;
   font-size: xx-large;
   color: white;
-  background: url(../Movies/popcorn.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -95,8 +96,6 @@ label {
   grid-auto-rows: auto;
   grid-gap: 1rem;
   grid-column-gap: 0px;
-  overflow-x: visible;
-  overflow-y: scroll;
   font-size: small;
 }
 
